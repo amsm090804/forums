@@ -19,7 +19,8 @@ class App extends Component {
             "opentextcolor":{"r":"31","g":"73","b":"139"},
             "opentextbackgroundcolor":{"r":"242","g":"242","b":"242"},
             "img": "https://www.patrioti.co.il/favicon.ico"
-        }
+        },
+        start: true
     }
 
     changeValue = (val) => {
@@ -49,6 +50,10 @@ class App extends Component {
         const orders = [...this.state.orders];
         orders.splice(index, 1);
         this.setState(({orders: orders}));
+    }
+
+    onLoad = ()=>{
+        this.setState({start:false});
     }
 
     render(){
@@ -81,12 +86,24 @@ class App extends Component {
             hiClasses.push(classes.bold);
         }
 
+        if(this.state.start){
       return (
           <Start img={this.state.apiStart.img}
                  opentext={this.state.apiStart.opentext}
                  opentextcolor={this.state.apiStart.opentextcolor}
-                 opentextbackgroundcolor={this.state.apiStart.opentextbackgroundcolor}></Start>
+                 opentextbackgroundcolor={this.state.apiStart.opentextbackgroundcolor}
+                 onLoadHandler={this.onLoad}></Start>
       );
+        }
+        else{
+            return (
+                <Start img={this.state.apiStart.img}
+                       opentext="hghgh hjghj gjh g"
+                       opentextcolor={this.state.apiStart.opentextcolor}
+                       opentextbackgroundcolor={this.state.apiStart.opentextbackgroundcolor}
+                       onLoadHandler={null}></Start>
+            );    
+        }
     }
 }
 

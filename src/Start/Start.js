@@ -14,6 +14,12 @@ const Start = (props) => {
         backgroundColor: 'rgba(' + opentextbackgroundcolor.r +',' + opentextbackgroundcolor.g + ',' + opentextbackgroundcolor.b + ',1.0)',
     }
 
+    setTimeout(function(){
+        if(props.onLoadHandler){
+            props.onLoadHandler();
+        }
+    }, 3000);
+
     return <div>
          <div className={classes.Start} style={style}></div>
         <div className={classes.Container} style={styleContainer}>{props.opentext}</div>

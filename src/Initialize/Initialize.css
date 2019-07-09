@@ -1,0 +1,11 @@
+.Container{
+    font-size: 30px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 480px){
+    .Container{
+        width: 500px;
+    }
+}

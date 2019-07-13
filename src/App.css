@@ -31,3 +31,8 @@ body {
 .App button.Red:hover{
   background-color: salmon;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

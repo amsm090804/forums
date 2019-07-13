@@ -1,0 +1,19 @@
+.Category {
+    direction: inherit;
+    list-style-type: inherit;
+}
+.Category_title {
+    width: 92%;
+    margin: auto;
+}
+
+.Category_img {
+    width: 40px;
+    height: 40px;
+    padding-right: 3%;
+}
+
+.Category span {
+    font-size: 50px;
+    padding-right: 3%;
+}

@@ -1,0 +1,12 @@
+@media (min-width: 480px) {
+    .HomePage {
+        width: 650px;
+        margin: auto;
+    }
+}
+.HomePage {
+    direction: rtl;
+    list-style-type: none;
+    margin-block-start: auto;
+    padding-inline-start: 0px;
+}

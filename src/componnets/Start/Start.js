@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Start.css'
 
-const Start = (props) => {    
+const Start = (props) => {
     const opentextcolor = props.opentextcolor;
     const opentextbackgroundcolor = props.opentextbackgroundcolor;
 
@@ -20,7 +20,7 @@ const Start = (props) => {
     }, 3000);
 
     return <div>
-         <div className={classes.Start} style={style}></div>
+        <div className={classes.Start} style={style}></div>
         <div className={classes.Container} style={styleContainer}>{props.opentext}</div>
     </div>
 }

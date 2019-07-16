@@ -29,6 +29,7 @@ class App extends Component {
             //    opentextbackgroundcolor={this.state.apiStart.opentextbackgroundcolor}
             //    setEnd={this.setStartEnd}
             //></Start>);
+            //
             startObj = (<Homepage />);
         }
         else {

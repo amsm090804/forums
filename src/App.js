@@ -12,7 +12,7 @@ class App extends Component {
             "react":{"versionnumber":"3.4","isupdate":true,"isforceupdate":true,
                 "addmob":{"bundleid":"il.co.patrioty.NewsApp","app":"ca-app-pub-7571236869931205~5067219036","unit":"ca-app-pub-7571236869931205/5614013943"}},
             "apidata":"https://www.patrioti.co.il/api/Report/applicationjson",
-            "opentext":"פורום חדשות ישראל555י",
+            "opentext":"פורום חדשות ישראלי",
             "opentextcolor":{"r":"31","g":"73","b":"139"},
             "opentextbackgroundcolor":{"r":"242","g":"242","b":"242"},
             "img": "https://www.patrioti.co.il/favicon.ico"
@@ -20,8 +20,7 @@ class App extends Component {
         start: true,
     }
 
-    render(){
-
+    render() {
         let startObj = null;
         if (this.state.start) {
             //startObj = (<Start img={this.state.apiStart.img}

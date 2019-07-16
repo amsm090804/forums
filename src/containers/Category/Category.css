@@ -1,19 +1,32 @@
 .Category {
     direction: inherit;
     list-style-type: inherit;
+    margin-top: 3%;
 }
-.Category_title {
+.title {
     width: 92%;
     margin: auto;
 }
 
+.Category_container_img {
+    
+}
 .Category_img {
     width: 40px;
     height: 40px;
-    padding-right: 3%;
+    display: inline-block;
+    margin-right: 3%;
+    border-radius: 10%;
 }
-
-.Category span {
+.Category_title_name {
+    display: inline-block;
+    width: 68%;
+    direction: ltr;
+}
+.Category .Category_title_name span {
     font-size: 50px;
     padding-right: 3%;
+}
+.Category_title_back {
+    font-size: 47px;
 }

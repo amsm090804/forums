@@ -10,28 +10,32 @@
 .Article {    
     margin: 2% 2% 2% 2%;
     width: 600px;
-    height: 130px;
+    height: 160px;
 }
 
 .container {
     background-color: white;
     width: 96%;
-    height: 100%;
+    height: 86%;
     display: inline-flex;
+    border-top: 1px solid #00000038;
+    border-right: 1px solid #00000038;
+    border-left: 1px solid #00000038;
 }
 
-.container_img {
-    width: 40%;
+.img {
+    width: 30%;
     height: 100%;
 }
 .container img {
     width: 94%;
     height: 94%;
     margin: 4%;
+    border-radius: 5%;
 }
 
 .container_data {
-    width: 60%;
+    width: 70%;
     height: 100%;
 }
 .container_data_title {
@@ -59,10 +63,50 @@
     opacity: 0.7;
 }
 
+.bottom {
+    height: 15%;
+    background-color: #70809047;
+    width: 96%;
+    margin-top: -2%;
+    border: 1px solid #00000038;
+    font-size: 12px;
+}
+.hot {
+    color: red;
+}
+.divdate {
+    text-align: right;
+    width: 38%;
+    display: inline-block;
+    padding-right: 2%;
+}
+.date {
+    vertical-align: text-top;
+}
+.eye {
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+}
+.comment {
+    text-align: left;
+    width: 28%;
+    display: inline-block;
+    padding-left: 2%;
+}
 @media (max-width: 480px) {
     .Article {
         width: 100%;
-        height: 130px;
+        height: 140px;
+    }
+    .img {
+        width: 40%;
+    }
+    .bottom{
+        height: 10%;
+    }
+    .container_data {
+        width: 60%;
     }
     .FontAwesome {
         top: -90%;

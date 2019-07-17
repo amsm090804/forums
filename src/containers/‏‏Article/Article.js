@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './Article.css';
 import * as FontAwesome from 'react-icons/fa';
+import DateFormat from '../../componnets/DateFormat/DateFormat';
 
 const Article = (props) => {
 
@@ -35,26 +36,33 @@ const Article = (props) => {
     //
     //     );
     // }
-    let fontAwesome = props.article.ismovie ? <FontAwesome.FaPlayCircle className={classes.FontAwesome} /> : null;
+    let article = props.article;
+    let fontAwesome = article.ismovie ? <FontAwesome.FaPlayCircle className={classes.FontAwesome} /> : null;
+    let fontAwesomeFire = props.averagecount * 2 < article.count ? <FontAwesome.FaFire className={classes.hot} /> : null;
 
     //return <Article article={article} />
-    return <li className={classes.Article} key={props.article.guid}>
-        <a href="">
+    return <li className={classes.Article} key={article.guid}>
+        
             <div className={classes.container}>
-                <div className={classes.container_img}>
-                    <img src={props.article.images[0].url + '?width=130&height=130&mode=stretch'} />
+                <div className={classes.img}>
+                    <img alt={article.images[0].title} src={article.images[0].url + '?width=130&height=130&mode=stretch'} />
                     {fontAwesome}
                 </div>
                 <div className={classes.container_data}>
                     <div className={classes.container_data_title}>
-                        {props.article.title}
+                        {article.title}
                     </div>
                     <div className={classes.container_data_reporter}>
-                        מאת: {props.article.reporternick}
+                        מאת: {article.reporternick}
                     </div>
                 </div>
             </div>
-        </a>
+            <div className={classes.bottom}>
+                <div className={classes.divdate}><DateFormat className={classes.date} date={article.updatedate} /></div>
+                <div className={classes.eye}>{fontAwesomeFire}<FontAwesome.FaEye /> {article.count}</div>
+                <div className={classes.comment}><FontAwesome.FaComment /> {article.countcommenttotal}</div>
+            </div>
+        
     </li>
 
 }

@@ -30,3 +30,12 @@
 .Category_title_back {
     font-size: 47px;
 }
+
+.Articles {
+    direction: inherit;
+    list-style-type: inherit;
+    padding-inline-start: 0px;
+    width: 96%;
+    margin: auto;
+    font-family: arial;
+}

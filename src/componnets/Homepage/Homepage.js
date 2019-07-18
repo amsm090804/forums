@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import classes from './Homepage.css';
 import Category from '../../containers/Category/Category';
+import Sekindo from '../../containers/Sekindo/Sekindo';
 import { Route, Link } from 'react-router-dom';
 
 class Homepage extends Component {
@@ -30,7 +31,6 @@ class Homepage extends Component {
         //         // this.setState({error: true});
         //} );
 
-        //return newsserver.Models.CacheServerApp.InstanceReport.Count == 0 ? 0 : data.TotalWatch() / newsserver.Models.CacheServerApp.InstanceReport.Count;
         let categories = [{
             "guid": "f423c407-cfb5-4a32-afb6-93c99fe277b5",
             "sort": 0,
@@ -12415,10 +12415,10 @@ class Homepage extends Component {
                     categoryBackClick={this.categoryBackClick}
                     averagecount={this.state.averagecount}
                 />
-            })
+            })            
         }
 
-        return <ul className={classes.HomePage}>{list}</ul>;
+        return <ul className={classes.HomePage}><Sekindo key={'Sekindo1'} />{list}</ul>;
     }
 }
 

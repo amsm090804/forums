@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\componnets",
+    "\\src\\componnets\\Homepage",
+    "\\src\\containers",
+    "\\src\\containers\\Category",
+    "\\src\\containers\\‏‏Article"
   ],
+  "SelectedNode": "\\src\\componnets\\Homepage\\Homepage.js",
   "PreviewInSolutionExplorer": false
 }

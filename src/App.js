@@ -29,6 +29,7 @@ class App extends Component {
             //    opentextbackgroundcolor={this.state.apiStart.opentextbackgroundcolor}
             //    setEnd={this.setStartEnd}
             //></Start>);
+            //
             startObj = (<Homepage />);
         }
         else {
@@ -37,9 +38,10 @@ class App extends Component {
 
         return (
         <BrowserRouter>
-        <div>
-            {startObj}
-        </div>
+            <div>
+                {startObj}
+
+            </div>
         </BrowserRouter>);
     }
 }

@@ -38,9 +38,10 @@ class App extends Component {
 
         return (
         <BrowserRouter>
-        <div>
-            {startObj}
-        </div>
+            <div>
+                {startObj}
+
+            </div>
         </BrowserRouter>);
     }
 }

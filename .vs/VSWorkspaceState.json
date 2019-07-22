@@ -3,11 +3,10 @@
     "",
     "\\src",
     "\\src\\componnets",
-    "\\src\\componnets\\Homepage",
     "\\src\\containers",
     "\\src\\containers\\Category",
-    "\\src\\containers\\‏‏Article"
+    "\\src\\containers\\Sekindo"
   ],
-  "SelectedNode": "\\src\\componnets\\Homepage\\Homepage.js",
+  "SelectedNode": "\\src\\containers\\Sekindo\\Sekindo.js",
   "PreviewInSolutionExplorer": false
 }
